@@ -1,0 +1,29 @@
+---
+title: "pseudocode"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Gaudi
+
+
+
+## Including Plots
+
+Example plot:
+
+```{r pressure, echo = FALSE}
+plot(pressure)
+```
+
+Example non-executed code:
+
+```{r, eval = FALSE}
+worldbank_data %>% 
+  gaudi() %>% 
+  audio_chord(key = country, progression = year)
+```
+
