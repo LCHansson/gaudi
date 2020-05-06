@@ -7,23 +7,40 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Gaudi
+# Gaudi
+
+## Spec
+
+We could go with an idea very similar to `ggplot2`'s, with `channel`s replacing `geom`s but with similar characteristics. We could have aesthetics in both the main object (represented by a call to `gaudi`) and in the individual channels. On top of that we would offer additional methods (like `theme_blank` and `facet_wrap` in `ggplot2`).
+
+Ideas for _channels_:
+
+- instruments (piano, marimba, KORG MB-88, etc.)
+- beats (drums, plops, etc.)
+- noise
+
+Ideas for _aesthetics_:
+
+- key
+- progression
+- harmony
+- amplitude
+- height (C1, C2, C3 etc)
+- notes
+- style (staccato, legato, etc.)
+- noise/randomness
+ 
+Ideas for _additional methods_:
+
+- Setting (echoes, balance, Dolby surround etc.)
+- Equalizer
 
 
-
-## Including Plots
-
-Example plot:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-Example non-executed code:
+## Pseudocode
 
 ```{r, eval = FALSE}
 worldbank_data %>% 
   gaudi() %>% 
-  audio_chord(key = country, progression = year)
+  channel_piano(chord = value, key = country, progression = year, noise = noise_jitter(seed = value))
 ```
 
