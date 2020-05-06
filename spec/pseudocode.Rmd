@@ -40,7 +40,9 @@ Ideas for _additional methods_:
 
 ```{r, eval = FALSE}
 worldbank_data %>% 
-  gaudi() %>% 
-  channel_piano(chord = value, key = country, progression = year, noise = noise_jitter(seed = value))
+  gaudi(time = year) %>% 
+  channel_piano(chord = value, key = country, progression = year, noise = noise_jitter(seed = value)) %>%
+  channel_beat(frame = "4/4", noise = noise_triolic(seed = 1)) %>%
+  setting(room = "Dolby surround")
 ```
 
