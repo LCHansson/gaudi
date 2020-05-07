@@ -18,6 +18,7 @@ Ideas for _channels_:
 - instruments (piano, marimba, KORG MB-88, etc.)
 - beats (drums, plops, etc.)
 - noise
+- sine
 
 Ideas for _aesthetics_:
 
@@ -29,6 +30,8 @@ Ideas for _aesthetics_:
 - notes
 - style (staccato, legato, etc.)
 - noise/randomness
+- distortion
+- fade
  
 Ideas for _additional methods_:
 
